@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Рецепты</title>
+    <link rel="shortcut icon" href="sources/hleb_happy.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body background="sources/background_kross.jpg" leftmargin="20" text="purple" vlink="purple" link="purple" alink="violet"> 
+    <p>
+      <font size="5">
+        <img src="sources/hleb_happy-round.png" height="80" align="middle">
+        <a href="index.html">Главная</a>
+        <a href="receipts.html">Рецепты</a>
+        <a href="about.html">О сайте</a> 
+      </font>
+    </p>
+    <font size="5" color="black" face="Arial"><p align="center">
+      <b>На этой странице находится таблица с информацией о рецептах, размещенных на сайте.</b></p></font>
+      <table border ="3" bgcolor="white" align="center">
+        <tr>
+        <th>Название рецепта</th> <th>Дата загрузки</th> <th>Время приготовления, мин.</th> <th>Рейтинг</th> <th>Сложность приготовления</th>
+        <!--очень легко, легко, нормально, трудно, очень трудно-->
+        </tr>
+        <tr>
+        <td>Торт "Мудрый Еврей"</td><td>12.02.2022</td><td>100</td><td>4</td><td>Трудно</td>
+        </tr>
+        <tr>
+        <td>Пирожное "Жадный Фраер"</td><td>13.04.2022</td><td>50</td><td>3.75</td><td>Легко</td>
+        </tr>
+        <tr>
+        <td>Торт "Мудрый Еврей"</td><td>14.02.2022</td><td>120</td><td>4</td><td>Трудно</td>
+        </tr>
+        <tr>
+        <td>Булочки с Маком</td><td>07.07.2022</td><td>25</td><td>50</td><td>Нормально</td>
+        </tr>
+        <tr>
+        <td>Булочки с Повидлом</td><td>06.08.2022</td><td>25</td><td>40</td><td>Нормально</td>
+        </tr>
+        <tr>
+        <td>Печенье "Рождественское"</td><td>06.07.2022</td><td>120</td><td>5</td><td>Трудно</td>
+        </tr>
+        <tr>
+        <td>Круассан с шоколадом</td><td>12.04.2022</td><td>30</td><td>5</td><td>Легко</td>
+        </tr>
+        <tr>
+        <td>Тыквенный кекс</td><td>12.04.2022</td><td>25</td><td>4.5</td><td>Нормально</td>
+        </tr>
+        <tr>
+        <td>Тыквенный чизкейк</td><td>10.05.2022</td><td>75</td><td>4.75</td><td>Очень трудно</td>
+        </tr>
+      </table>
+
+      <br>
+
+      <fieldset>
+        <form>
+          <font color="black"><b>Отсортировать по:</b></font>
+          <select name="sort-options">
+            <option value="0" selected> Названию рецепта </option>
+            <option value="1"> Дате загрузки </option>
+            <option value="2"> Времени приготовления </option>
+            <option value="3"> Рейтингу </option>
+            <option value="4"> Сложности приготовления </option>
+           </select>
+
+           <button>
+            <input type="submit" value="ОК">
+           </button>
+        </form>
+
+        <hr size="2" color="grey">
+        <font color="black"><b> <p>Отобразить: </p></b></font>
+        <form>
+          <font color="black">С рейтингом от:</font>
+          <select name="sort-options">
+            <option value="0"> 1.0 </option>
+            <option value="1"> 2.0 </option>
+            <option value="2"> 3.0 </option>
+            <option value="3"> 4.0 </option>
+            <option value="4" selected> 5.0 </option>
+           </select>
+
+           <button>
+            <input type="submit" value="ОК">
+           </button>
+        </form>
+        <form>
+          <font color="black">Дата:</font>
+          <input type="text" size="10" placeholder="дд">
+          <input type="text" size="10" placeholder="мм">
+          <input type="text" size="10" placeholder="гг">
+
+          <button>
+            <input type="submit" value="ОК">
+          </button>
+        </form>
+
+        <form>
+          <font color="black">Сложность приготовления:</font>
+          <select name="sort-options">
+            <option value="0"> Очень легко </option>
+            <option value="1"> Легко </option>
+            <option value="2" selected> Нормально </option>
+            <option value="3"> Трудно </option>
+            <option value="4"> Очень трудно </option>
+           </select>
+
+           <button>
+            <input type="submit" value="ОК">
+           </button>
+        </form>
+        <hr size="2" color="grey">
+       <form><button><input type="submit" value="Показать график даты загрузки рецептов"></button></form>
+       <!-- <form>
+          <font color="black"><b>Добавить новый рецепт в таблицу:</b> </font>
+          <p>
+            <input type="text" size="30" placeholder="Название рецепта">
+          </p>
+          <p>
+            <input type="text" size="30" placeholder="Время приготовления, мин.">
+          </p>
+          <p>
+            <input type="text" size="30" placeholder="Рейтинг">
+          </p>
+          <p>
+            <input type ="text" size="30" placeholder="Сложность приготовления">
+          </p>
+          <button>
+            <input type="submit" value="Добавить">
+           </button>
+        </form>
+        <hr size="2" color="grey"> -->
+      </fieldset>
+</body>
+</html>
